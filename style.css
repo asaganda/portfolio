@@ -7,6 +7,8 @@ body {
 }
 #home {
     margin: 1em 0px;
+    display: flex;
+    flex-direction: column;
 }
 #pic-title {
     display: flex;
@@ -21,7 +23,9 @@ body {
     object-fit: cover;
     margin-right: 1em;
 }
-#nav-list {
+/* #nav-list {
+} */
+#nav-list ul {
     padding-left: 0px;
     display: flex;
     flex-direction: column;
@@ -55,4 +59,53 @@ nav .nav-item {
 }
 #links img {
     width: 30px;
+}
+
+#bio {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#resume {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#projects {
+    width: 90%;
+    margin: 0 auto;
+}
+#projects h2 {
+    margin-bottom: 15px;
+}
+.project-item {
+    margin-bottom: 1em;
+}
+.project-item img {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    #home {
+        flex-direction: row;
+    }
+    #pic-title {
+        justify-content: center;
+    }
+    #nav-list {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0px;
+        align-items: center;
+    }
+    #nav-list ul {
+        flex-direction: row;
+        height: 56px;
+        align-content: center;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .nav-item {
+        padding: 1.3em;
+    }
 }
