@@ -15,6 +15,7 @@ body {
     align-items: center;
     width: 90%;
     margin: 0 auto;
+    margin-bottom: 1em;
 }
 #pic-title img {
     width: 100px;
@@ -23,8 +24,18 @@ body {
     object-fit: cover;
     margin-right: 1em;
 }
-/* #nav-list {
-} */
+
+nav {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+nav .nav-item {
+    background: lightyellow;
+    text-align: center;
+    padding: 1.2em 1em;
+    border-radius: 1.1em;
+}
 #nav-list ul {
     padding-left: 0px;
     display: flex;
@@ -39,16 +50,10 @@ body {
 .d-block {
     display: block;
 }
-nav {
-    width: 90%;
-    margin: 0 auto;
-    margin-bottom: 1em;
-}
-nav .nav-item {
-    background: lightyellow;
-    text-align: center;
-    padding: 1.2em 1em;
-    border-radius: 1.1em;
+
+#main-content {
+    display: flex;
+    flex-direction: column;
 }
 
 #links {
@@ -85,6 +90,7 @@ nav .nav-item {
     width: 100%;
 }
 
+/* tablet portrait */
 @media (min-width: 768px) {
     #home {
         flex-direction: row;
@@ -108,8 +114,19 @@ nav .nav-item {
     .nav-item {
         padding: 1.3em;
     }
+    #main-content {
+        flex-direction: row;
+        margin: 0 1em;
+    }
+    #links {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 129px;
+    }
 }
 
+/* tablet landscape */
 @media (min-width: 1024px) {
     #pic-title {
         justify-content: flex-start;
@@ -125,5 +142,19 @@ nav .nav-item {
     }
     nav .nav-item {
         width: 7em;
+    }
+}
+
+/* small laptop width */
+@media (min-width: 1200px) {
+    #pic-title img {
+        width: 120px;
+        border-radius: 50%;
+        height: 110px;
+        object-fit: cover;
+        margin-right: 1em;
+    }
+    #links {
+        width: 25%;
     }
 }
