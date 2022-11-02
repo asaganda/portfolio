@@ -5,11 +5,23 @@
 body {
     background: bisque;
 }
-#home {
+
+/* default display for #dynamic-content */
+.content-item {
+    display: none;
+}
+
+.show-content {
+    display: block;
+}
+
+/* pretty sure don't need this */
+/* #home {
     margin: 1em 0px;
     display: flex;
     flex-direction: column;
-}
+} */
+
 #pic-title {
     display: flex;
     align-items: center;
@@ -35,6 +47,7 @@ nav .nav-item {
     text-align: center;
     padding: 1.2em 1em;
     border-radius: 1.1em;
+    cursor: pointer;
 }
 #nav-list ul {
     padding-left: 0px;
@@ -92,9 +105,9 @@ nav .nav-item {
 
 /* tablet portrait */
 @media (min-width: 768px) {
-    #home {
+    /* #home {
         flex-direction: row;
-    }
+    } */
     #pic-title {
         justify-content: center;
     }
