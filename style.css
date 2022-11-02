@@ -109,3 +109,21 @@ nav .nav-item {
         padding: 1.3em;
     }
 }
+
+@media (min-width: 1024px) {
+    #pic-title {
+        justify-content: flex-start;
+        margin-left: 3em;
+        width: 33%;
+    }
+    #pic-title img {
+        width: 150px;
+        border-radius: 50%;
+        height: 110px;
+        object-fit: cover;
+        margin-right: 1em;
+    }
+    nav .nav-item {
+        width: 7em;
+    }
+}
