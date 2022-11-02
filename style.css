@@ -15,12 +15,11 @@ body {
     display: block;
 }
 
-/* pretty sure don't need this */
-/* #home {
+#header {
     margin: 1em 0px;
     display: flex;
     flex-direction: column;
-} */
+}
 
 #pic-title {
     display: flex;
@@ -105,9 +104,9 @@ nav .nav-item {
 
 /* tablet portrait */
 @media (min-width: 768px) {
-    /* #home {
+    #header {
         flex-direction: row;
-    } */
+    }
     #pic-title {
         justify-content: center;
     }
