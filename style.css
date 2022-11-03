@@ -163,7 +163,7 @@ nav .nav-item {
         background: #fa8d8e;
         color: white;
     }
-    .carousel-projects .project-item:first-of-type {
+    .carousel-projects .show-project {
         display: block;
     }
     /* .carousel-projects .project-item img {

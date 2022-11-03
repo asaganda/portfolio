@@ -10,15 +10,13 @@ $(() => {
     //     $('#projects').css('display', 'block');
     // })
     
+    // these control the nav bar and what content is shown
     $('#nav-home').on('click', () => {
         const $contentItems = $('.content-item');
-        console.log($contentItems)
 
         for (let i = 0; i < $contentItems.length; i++) {
             const objectClassesCollection = $contentItems[i].classList;
             objectClassesCollection.remove("show-content");
-            // prints each content classList
-            console.log(objectClassesCollection);
         }
 
         $('#home').addClass('show-content');
@@ -26,13 +24,10 @@ $(() => {
 
     $('#nav-bio').on('click', () => {
         const $contentItems = $('.content-item');
-        console.log($contentItems)
 
         for (let i = 0; i < $contentItems.length; i++) {
             const objectClassesCollection = $contentItems[i].classList;
             objectClassesCollection.remove("show-content");
-            // prints each content classList
-            console.log(objectClassesCollection);
         }
 
         $('#bio').addClass('show-content');
@@ -40,13 +35,10 @@ $(() => {
 
     $('#nav-resume').on('click', () => {
         const $contentItems = $('.content-item');
-        console.log($contentItems)
 
         for (let i = 0; i < $contentItems.length; i++) {
             const objectClassesCollection = $contentItems[i].classList;
             objectClassesCollection.remove("show-content");
-            // prints each content classList
-            console.log(objectClassesCollection);
         }
 
         $('#resume').addClass('show-content');
@@ -54,15 +46,36 @@ $(() => {
 
     $('#nav-projects').on('click', () => {
         const $contentItems = $('.content-item');
-        console.log($contentItems)
 
         for (let i = 0; i < $contentItems.length; i++) {
             const objectClassesCollection = $contentItems[i].classList;
             objectClassesCollection.remove("show-content");
-            // prints each content classList
-            console.log(objectClassesCollection);
         }
 
         $('#projects').addClass('show-content');
+    })
+
+    // project carousel logic
+    let currentProjectIndex = 0;
+    let numOfProjectItems = $('.carousel-projects').children().length -1;
+
+    $('.next').on('click', () => {
+        $('.carousel-projects').children().eq(currentProjectIndex).removeClass('show-project');
+        if (currentProjectIndex < numOfProjectItems) {
+            currentProjectIndex++
+        } else {
+            currentProjectIndex = 0
+        }
+        $('.carousel-projects').children().eq(currentProjectIndex).addClass('show-project');
+    })
+
+    $('.previous').on('click', () => {
+        $('.carousel-projects').children().eq(currentProjectIndex).removeClass('show-project');
+        if (currentProjectIndex > 0) {
+            currentProjectIndex--
+        } else {
+            currentProjectIndex = numOfProjectItems
+        }
+        $('.carousel-projects').children().eq(currentProjectIndex).addClass('show-project');
     })
 })
