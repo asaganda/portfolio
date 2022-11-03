@@ -104,6 +104,12 @@ nav .nav-item {
 .project-item img {
     width: 100%;
 }
+#reveal-1, #reveal-2, #reveal-3 {
+    display: none;
+}
+.modal {
+    display: none;
+}
 
 /* tablet portrait */
 @media (min-width: 768px) {
@@ -174,7 +180,7 @@ nav .nav-item {
     .carousel-projects .show-project {
         display: block;
     }
-    .project-item h3, .project-item p {
+    .project-item p {
         display: none;
     }
 
@@ -216,6 +222,9 @@ nav .nav-item {
         color: black;
     }
     .show-modal {
+        display: block;
+    }
+    #reveal-1, #reveal-2, #reveal-3 {
         display: block;
     }
 
