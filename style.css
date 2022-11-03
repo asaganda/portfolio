@@ -88,6 +88,9 @@ nav .nav-item {
     margin: 0 auto;
 }
 
+.carousel-button {
+    display: none;
+}
 #projects {
     width: 90%;
     margin: 0 auto;
@@ -135,6 +138,10 @@ nav .nav-item {
     }
     
     /* carousel styles */
+    #project-container {
+        display: flex;
+        justify-content: center;
+    }
     #project-list-carousel {
         width: 80%;
         display: flex;
@@ -151,6 +158,7 @@ nav .nav-item {
         display: none;
     }
     .carousel-button {
+        display: block;
         align-self: center;
         background: blue;
         color: red;
@@ -199,10 +207,6 @@ nav .nav-item {
     }
     nav .nav-item {
         width: 7em;
-    }
-    #project-container {
-        display: flex;
-        justify-content: center;
     }
     #project-list-carousel {
         max-width: 600px;
