@@ -174,11 +174,49 @@ nav .nav-item {
     .carousel-projects .show-project {
         display: block;
     }
-    /* .carousel-projects .project-item img {
-        width: 50vw;
-    } */
     .project-item h3, .project-item p {
         display: none;
+    }
+
+    /* modal styles */
+    .modal {
+        display: none;
+        background-color: rgba(0,0,0,0.8);
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+    }
+    #modal-textbox {
+        display: flex;
+        background-color: white;
+        flex-direction: column;
+        width: 500px;
+        border-radius: 25px;
+        margin: 100px auto;
+        padding: 30px 30px;
+    }
+    #modal-textbox img {
+        margin-bottom: 1em;
+    }
+    #modal-textbox h3 {
+        color: black;
+        margin-bottom: 1em;
+        display: block;
+    }
+    #modal-textbox p {
+        color: black;
+        margin-bottom: 1em;
+        display: block;
+    }
+    #modal-footer {
+        text-align: right;
+        color: black;
+    }
+    .show-modal {
+        display: block;
     }
 
     #links {

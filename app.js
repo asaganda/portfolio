@@ -1,14 +1,5 @@
 
 $(() => {
-    // $('#nav-bio').on('click', () => {
-    //     $('#bio').css('display', 'block');
-    // })
-    // $('#nav-resume').on('click', () => {
-    //     $('#resume').css('display', 'block');
-    // })
-    // $('#nav-projects').on('click', () => {
-    //     $('#projects').css('display', 'block');
-    // })
     
     // these control the nav bar and what content is shown
     $('#nav-home').on('click', () => {
@@ -78,4 +69,27 @@ $(() => {
         }
         $('.carousel-projects').children().eq(currentProjectIndex).addClass('show-project');
     })
+
+    // modal functionality
+    $('#reveal-1').on('click', () => {
+        $('#project-1').addClass('show-modal');
+    });
+    $('#close-project-1').on('click', () => {
+        $('#project-1').removeClass('show-modal');
+    });
+
+    $('#reveal-2').on('click', () => {
+        $('#project-2').addClass('show-modal');
+    })
+    $('#close-project-2').on('click', () => {
+        $('#project-2').removeClass('show-modal');
+    })
+
+    $('#reveal-3').on('click', () => {
+        $('#project-3').addClass('show-modal');
+    })
+    $('#close-project-3').on('click', () => {
+        $('#project-3').removeClass('show-modal');
+    })
+
 })
