@@ -57,6 +57,7 @@ nav .nav-item {
 }
 #nav-list li {
     list-style: none;
+    box-shadow: 0px 0px 4px 1px lightgrey;
 }
 
 .d-block {
@@ -199,7 +200,7 @@ nav .nav-item {
         display: flex;
         background-color: white;
         flex-direction: column;
-        width: 500px;
+        width: 450px;
         border-radius: 25px;
         margin: 100px auto;
         padding: 30px 30px;
@@ -259,6 +260,9 @@ nav .nav-item {
         max-width: 600px;
         align-self: center;
     }
+    #modal-textbox {
+        width: 600px;
+    }
 }
 
 /* small laptop width */
@@ -273,4 +277,10 @@ nav .nav-item {
     /* #links {
         width: 25%;
     } */
+    .nav-item:hover {
+        background: lightcoral;
+    }
+    .nav-item:active {
+        background: lightcoral;
+    }
 }

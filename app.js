@@ -4,7 +4,7 @@ $(() => {
     // these control the nav bar and what content is shown
     $('#nav-home').on('click', () => {
         const $contentItems = $('.content-item');
-
+        
         for (let i = 0; i < $contentItems.length; i++) {
             const objectClassesCollection = $contentItems[i].classList;
             objectClassesCollection.remove("show-content");
