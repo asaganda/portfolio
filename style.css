@@ -141,7 +141,7 @@ nav .nav-item {
         justify-content: center;
     }
     .carousel-projects {
-        width: 100%;
+        width: 480px;
         padding: 10px;
         border-radius: 5px;
     }
@@ -200,6 +200,14 @@ nav .nav-item {
     nav .nav-item {
         width: 7em;
     }
+    #project-container {
+        display: flex;
+        justify-content: center;
+    }
+    #project-list-carousel {
+        max-width: 600px;
+        align-self: center;
+    }
 }
 
 /* small laptop width */
@@ -211,7 +219,7 @@ nav .nav-item {
         object-fit: cover;
         margin-right: 1em;
     }
-    #links {
+    /* #links {
         width: 25%;
-    }
+    } */
 }
