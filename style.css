@@ -153,9 +153,9 @@ nav .nav-item {
     .carousel-button {
         align-self: center;
         background: blue;
-        color: #888;
-        padding: 10px;
-        border-radius: 20%;
+        color: red;
+        padding: 5px 9px;
+        border-radius: 50%;
         text-align: center;
     }
     .carousel-button:hover {
@@ -166,9 +166,9 @@ nav .nav-item {
     .carousel-projects .project-item:first-of-type {
         display: block;
     }
-    .carousel-projects .project-item img {
+    /* .carousel-projects .project-item img {
         width: 50vw;
-    }
+    } */
     .project-item h3, .project-item p {
         display: none;
     }
