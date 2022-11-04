@@ -3,8 +3,17 @@ $(() => {
     
     // these control the nav bar and what content is shown
     $('#nav-home').on('click', () => {
-        const $contentItems = $('.content-item');
         
+        const $navItems = $('.nav-item');
+        console.log($navItems);
+        for (let i = 0; i < $navItems.length; i++) {
+            const objectClassCollection = $navItems[i].classList;
+            objectClassCollection.remove("nav-active");
+        }
+        $('#nav-home').addClass("nav-active");
+
+        const $contentItems = $('.content-item');
+
         for (let i = 0; i < $contentItems.length; i++) {
             const objectClassesCollection = $contentItems[i].classList;
             objectClassesCollection.remove("show-content");
@@ -14,6 +23,15 @@ $(() => {
     })
 
     $('#nav-bio').on('click', () => {
+        const $navItems = $('.nav-item');
+        console.log($navItems);
+        for (let i = 0; i < $navItems.length; i++) {
+            const objectClassCollection = $navItems[i].classList;
+            objectClassCollection.remove("nav-active");
+        }
+        $('#nav-bio').addClass("nav-active");
+
+
         const $contentItems = $('.content-item');
 
         for (let i = 0; i < $contentItems.length; i++) {
@@ -25,6 +43,14 @@ $(() => {
     })
 
     $('#nav-resume').on('click', () => {
+        const $navItems = $('.nav-item');
+        console.log($navItems);
+        for (let i = 0; i < $navItems.length; i++) {
+            const objectClassCollection = $navItems[i].classList;
+            objectClassCollection.remove("nav-active");
+        }
+        $('#nav-resume').addClass("nav-active");
+
         const $contentItems = $('.content-item');
 
         for (let i = 0; i < $contentItems.length; i++) {
@@ -36,6 +62,14 @@ $(() => {
     })
 
     $('#nav-projects').on('click', () => {
+        const $navItems = $('.nav-item');
+        console.log($navItems);
+        for (let i = 0; i < $navItems.length; i++) {
+            const objectClassCollection = $navItems[i].classList;
+            objectClassCollection.remove("nav-active");
+        }
+        $('#nav-projects').addClass("nav-active");
+
         const $contentItems = $('.content-item');
 
         for (let i = 0; i < $contentItems.length; i++) {
