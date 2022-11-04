@@ -90,22 +90,28 @@ h2, h3, p {
     width: 30px;
 }
 
+#dynamic-content {
+    display: flex;
+    flex-direction: column;
+}
+#home {
+    width: 90%;
+    align-self: center;
+}
+
 #bio {
     width: 90%;
-    margin: 0 auto;
+    align-self: center;
 }
 
 #resume {
     width: 90%;
-    margin: 0 auto;
+    align-self: center;
 }
 
-.carousel-button {
-    display: none;
-}
 #projects {
     width: 90%;
-    margin: 0 auto;
+    align-self: center;
 }
 #projects h2 {
     margin-bottom: 15px;
@@ -115,6 +121,9 @@ h2, h3, p {
 }
 .project-item img {
     width: 100%;
+}
+.carousel-button {
+    display: none;
 }
 #reveal-1, #reveal-2, #reveal-3 {
     display: none;
@@ -150,6 +159,21 @@ h2, h3, p {
     #main-content {
         flex-direction: row;
         margin: 0 1em;
+    }
+    #dynamic-content {
+        flex-direction: row;
+    }
+    #home {
+        align-self: flex-start;
+    }
+    #bio {
+        align-self: flex-start;
+    }
+    #resume {
+        align-self: flex-start;
+    }
+    #projects {
+        align-self: flex-start;
     }
     .content-item {
         position: absolute;
