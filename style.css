@@ -3,7 +3,7 @@
 }
 
 body {
-    background: bisque;
+    background: #D3C2ff;
 }
 
 /* default display for #dynamic-content */
@@ -49,11 +49,14 @@ nav {
     margin-bottom: 1em;
 }
 nav .nav-item {
-    background: lightyellow;
+    background: #AAF652;
     text-align: center;
     padding: 1.2em 1em;
     border-radius: 1.1em;
     cursor: pointer;
+    list-style: none;
+    box-shadow: 0px 0px 4px 1px lightgrey;
+    font-family: 'Asap', sans-serif;
 }
 #nav-list ul {
     padding-left: 0px;
@@ -61,11 +64,6 @@ nav .nav-item {
     flex-direction: column;
     height: 260px;
     justify-content: space-between;
-}
-#nav-list li {
-    list-style: none;
-    box-shadow: 0px 0px 4px 1px lightgrey;
-    font-family: 'Asap', sans-serif;
 }
 
 .d-block {
