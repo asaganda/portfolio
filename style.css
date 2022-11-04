@@ -39,8 +39,8 @@ body {
     /* font-family: 'Cabin', sans-serif; */
     /* font-family: 'Bebas Neue', sans-serif; */
     /* font-family: 'Abril Fatface', sans-serif;  LIKEEE */
-    /* font-family: 'Asap', sans-serif; ALSO LIKE */
-    font-family: sans-serif;
+    font-family: 'Asap', sans-serif;
+    /* font-family: sans-serif; */
 }
 
 nav {
@@ -65,6 +65,7 @@ nav .nav-item {
 #nav-list li {
     list-style: none;
     box-shadow: 0px 0px 4px 1px lightgrey;
+    font-family: 'Asap', sans-serif;
 }
 
 .d-block {
@@ -74,6 +75,9 @@ nav .nav-item {
 #main-content {
     display: flex;
     flex-direction: column;
+}
+h2, h3, p {
+    font-family: 'Asap', sans-serif;
 }
 
 #links {
