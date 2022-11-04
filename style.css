@@ -35,6 +35,13 @@ body {
     object-fit: cover;
     margin-right: 1em;
 }
+#pic-title h1 {
+    /* font-family: 'Cabin', sans-serif; */
+    /* font-family: 'Bebas Neue', sans-serif; */
+    /* font-family: 'Abril Fatface', sans-serif;  LIKEEE */
+    /* font-family: 'Asap', sans-serif; ALSO LIKE */
+    font-family: sans-serif;
+}
 
 nav {
     width: 90%;
