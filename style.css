@@ -39,8 +39,10 @@ body {
     /* font-family: 'Cabin', sans-serif; */
     /* font-family: 'Bebas Neue', sans-serif; */
     /* font-family: 'Abril Fatface', sans-serif;  LIKEEE */
-    font-family: 'Asap', sans-serif;
+    /* font-family: 'Asap', sans-serif; */
+    font-family: 'Englebert', sans-serif;
     /* font-family: sans-serif; */
+    line-height: 1.2;
 }
 
 nav {
@@ -136,13 +138,16 @@ h2, h3, p {
         flex-direction: row;
     }
     #pic-title {
-        justify-content: center;
+        margin-left: 2.5em;
+        justify-content: flex-start;
+        margin-bottom: 0;
     }
     #nav-list {
         display: flex;
         justify-content: center;
         margin-bottom: 0px;
         align-items: center;
+        margin-right: 2.5em;
     }
     #nav-list ul {
         flex-direction: row;
@@ -276,18 +281,21 @@ h2, h3, p {
 @media (min-width: 1024px) {
     #pic-title {
         justify-content: flex-start;
-        margin-left: 3em;
+        margin-left: 2.5em;
         width: 33%;
     }
+    #pic-title h1 {
+        min-width: 9em;
+    }
     #pic-title img {
-        width: 150px;
+        max-width: 100px;
         border-radius: 50%;
-        height: 110px;
+        max-height: 100px;
         object-fit: cover;
         margin-right: 1em;
     }
     nav .nav-item {
-        width: 7em;
+        min-width: 5em;
     }
     #project-list-carousel {
         max-width: 600px;
@@ -311,7 +319,7 @@ h2, h3, p {
         width: 25%;
     } */
     .nav-item:hover {
-        background: lightcoral;
+        background: #FF9100;
     }
     .nav-item:active {
         background: lightcoral;
