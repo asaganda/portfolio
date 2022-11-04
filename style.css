@@ -208,8 +208,8 @@ h2, h3, p {
     .carousel-button {
         display: block;
         align-self: center;
-        background: blue;
-        color: red;
+        background: #AAF652;
+        color: black;
         padding: 5px 9px;
         border-radius: 50%;
         text-align: center;
@@ -346,10 +346,13 @@ h2, h3, p {
         object-fit: cover;
         margin-right: 1em;
     }
-    /* #links {
-        width: 25%;
-    } */
     .nav-item:hover {
+        background: #FF9100;
+    }
+    .carousel-button:hover {
+        background: #FF9100;
+    }
+    .project-cta:hover {
         background: #FF9100;
     }
     .nav-item:active {
