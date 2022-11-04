@@ -5,7 +5,6 @@ $(() => {
     $('#nav-home').on('click', () => {
         
         const $navItems = $('.nav-item');
-        console.log($navItems);
         for (let i = 0; i < $navItems.length; i++) {
             const objectClassCollection = $navItems[i].classList;
             objectClassCollection.remove("nav-active");
@@ -24,7 +23,6 @@ $(() => {
 
     $('#nav-bio').on('click', () => {
         const $navItems = $('.nav-item');
-        console.log($navItems);
         for (let i = 0; i < $navItems.length; i++) {
             const objectClassCollection = $navItems[i].classList;
             objectClassCollection.remove("nav-active");
@@ -44,7 +42,6 @@ $(() => {
 
     $('#nav-resume').on('click', () => {
         const $navItems = $('.nav-item');
-        console.log($navItems);
         for (let i = 0; i < $navItems.length; i++) {
             const objectClassCollection = $navItems[i].classList;
             objectClassCollection.remove("nav-active");
@@ -63,7 +60,6 @@ $(() => {
 
     $('#nav-projects').on('click', () => {
         const $navItems = $('.nav-item');
-        console.log($navItems);
         for (let i = 0; i < $navItems.length; i++) {
             const objectClassCollection = $navItems[i].classList;
             objectClassCollection.remove("nav-active");
