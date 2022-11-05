@@ -79,10 +79,12 @@ nav .nav-active {
     display: flex;
     flex-direction: column;
 }
-h2, h3, p {
+h2, h3, h4, p {
     font-family: 'Asap', sans-serif;
 }
-
+h3 {
+    font-size: 1.5em;
+}
 #links {
     display: flex;
     width: 165px;
@@ -110,6 +112,20 @@ h2, h3, p {
 #resume {
     width: 90%;
     align-self: center;
+}
+#skills-container {
+    list-style-type: circle;
+    display: none;
+}
+#job-container {
+    margin-top: 0.5em;
+    display: none;
+}
+.job-title {
+    font-size: 1.2em;
+}
+#job-container ul {
+    list-style-type: circle;
 }
 
 #projects {
