@@ -122,12 +122,14 @@ $(() => {
         $('#project-3').removeClass('show-modal');
     })
 
+
+
     const openJob = () => {
         $('#job-container').toggle("slow");
     }
 
     const openSkills = () => {
-        $('#skills-container').toggle("slow");
+        $('#technologies-container').toggleClass("tech-skills-open");
     }
     // recent job toggle
     $('#recent-job').click(openJob);

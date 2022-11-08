@@ -114,9 +114,19 @@ h3 {
     width: 90%;
     align-self: center;
 }
-#skills-container {
-    list-style-type: circle;
+.tech-skills {
     display: none;
+}
+.tech-skills-open {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.skill-item {
+    text-align: center;
+}
+.skill-item img {
+    max-width: 60px;
 }
 #job-container {
     margin-top: 0.5em;
@@ -214,6 +224,9 @@ h3 {
     }
     #resume {
         align-self: flex-start;
+    }
+    .tech-skills-open {
+        width: 50vw;
     }
     #projects {
         align-self: flex-start;
@@ -364,6 +377,9 @@ h3 {
     }
     nav .nav-item {
         min-width: 5em;
+    }
+    .tech-skills-open {
+        width: 40vw;
     }
     #project-list-carousel {
         max-width: 600px;
