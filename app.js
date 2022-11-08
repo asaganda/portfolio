@@ -1,6 +1,6 @@
 
 $(() => {
-    
+
     // these control the nav bar and what content is shown
     $('#nav-home').on('click', () => {
         
@@ -122,6 +122,12 @@ $(() => {
         $('#project-3').removeClass('show-modal');
     })
 
+    // Allows user to close modal by clicking outside modal area background
+    $('body').on('click', (e) => {
+        if ($(e.target).hasClass('show-modal')) {
+            $(event.target).removeClass('show-modal');
+        }
+    })
 
 
     const openJob = () => {
