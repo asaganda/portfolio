@@ -1,79 +1,62 @@
 
+
 $(() => {
+
+    // show content related
+    const $contentItems = $('.content-item');
+    const showContentClass = 'show-content';
+    // individual content variables
+    const $homeContent = $('#home');
+    const $bioContent = $('#bio');
+    const $resumeContent = $('#resume');
+    const $projectContent = $('#projects');
+    
+    // active class related
+    const $navItems = $('.nav-item');
+    const navActiveClass = 'nav-active';
+    // individual nav items
+    const $navItemHome = $('#nav-home');
+    const $navItemBio = $('#nav-bio');
+    const $navItemResume = $('#nav-resume');
+    const $navItemProjects = $('#nav-projects');
+    
+
+    const showMainContent = (contentToShow, displayClass) => {
+        for (let i = 0; i < $contentItems.length; i++) {
+            const objectClassesCollection = $contentItems[i].classList;
+            objectClassesCollection.remove(displayClass);
+        }
+
+        contentToShow.addClass(displayClass);
+    }
+
+    const navItemActive = (navItem, activeClass) => {
+        for (let i = 0; i < $navItems.length; i++) {
+            const objectClassCollection = $navItems[i].classList;
+            objectClassCollection.remove(activeClass);
+        }
+        $(navItem).addClass(activeClass);
+    }
 
     // these control the nav bar and what content is shown
     $('#nav-home').on('click', () => {
-        
-        const $navItems = $('.nav-item');
-        for (let i = 0; i < $navItems.length; i++) {
-            const objectClassCollection = $navItems[i].classList;
-            objectClassCollection.remove("nav-active");
-        }
-        $('#nav-home').addClass("nav-active");
-
-        const $contentItems = $('.content-item');
-
-        for (let i = 0; i < $contentItems.length; i++) {
-            const objectClassesCollection = $contentItems[i].classList;
-            objectClassesCollection.remove("show-content");
-        }
-
-        $('#home').addClass('show-content');
+        navItemActive($navItemHome, navActiveClass);
+        showMainContent($homeContent, showContentClass);
     })
 
     $('#nav-bio').on('click', () => {
-        const $navItems = $('.nav-item');
-        for (let i = 0; i < $navItems.length; i++) {
-            const objectClassCollection = $navItems[i].classList;
-            objectClassCollection.remove("nav-active");
-        }
-        $('#nav-bio').addClass("nav-active");
-
-
-        const $contentItems = $('.content-item');
-
-        for (let i = 0; i < $contentItems.length; i++) {
-            const objectClassesCollection = $contentItems[i].classList;
-            objectClassesCollection.remove("show-content");
-        }
-
-        $('#bio').addClass('show-content');
+        navItemActive($navItemBio, navActiveClass);
+        showMainContent($bioContent, showContentClass);
     })
 
     $('#nav-resume').on('click', () => {
-        const $navItems = $('.nav-item');
-        for (let i = 0; i < $navItems.length; i++) {
-            const objectClassCollection = $navItems[i].classList;
-            objectClassCollection.remove("nav-active");
-        }
-        $('#nav-resume').addClass("nav-active");
-
-        const $contentItems = $('.content-item');
-
-        for (let i = 0; i < $contentItems.length; i++) {
-            const objectClassesCollection = $contentItems[i].classList;
-            objectClassesCollection.remove("show-content");
-        }
-
-        $('#resume').addClass('show-content');
+        navItemActive($navItemResume, navActiveClass);
+        showMainContent($resumeContent, showContentClass);
     })
 
     $('#nav-projects').on('click', () => {
-        const $navItems = $('.nav-item');
-        for (let i = 0; i < $navItems.length; i++) {
-            const objectClassCollection = $navItems[i].classList;
-            objectClassCollection.remove("nav-active");
-        }
-        $('#nav-projects').addClass("nav-active");
-
-        const $contentItems = $('.content-item');
-
-        for (let i = 0; i < $contentItems.length; i++) {
-            const objectClassesCollection = $contentItems[i].classList;
-            objectClassesCollection.remove("show-content");
-        }
-
-        $('#projects').addClass('show-content');
+        navItemActive($navItemProjects, navActiveClass);
+        showMainContent($projectContent, showContentClass);
     })
 
     // project carousel logic
