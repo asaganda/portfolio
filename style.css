@@ -61,7 +61,7 @@ nav .nav-item {
     list-style: none;
     box-shadow: 0px 0px 4px 1px lightgrey;
     font-family: 'Asap', sans-serif;
-    transition: all 0.4s;
+    transition: all 0.6s;
 }
 nav .nav-active {
     background: #FF9100;
