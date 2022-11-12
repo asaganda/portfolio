@@ -93,10 +93,10 @@ h3 {
     width: 165px;
     justify-content: space-evenly;
     align-self: center;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
 }
-#links img {
-    width: 30px;
+#links a {
+    color: black;
 }
 
 #dynamic-content {
@@ -218,6 +218,8 @@ h3 {
     }
     #dynamic-content {
         flex-direction: row;
+        flex-basis: 80%;
+        position: relative;
     }
     #home {
         align-self: flex-start;
@@ -358,9 +360,9 @@ h3 {
 
     #links {
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        height: 129px;
+        height: 160px;
         width: 80px;
         align-self: flex-start;
     }
