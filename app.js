@@ -19,7 +19,11 @@ $(() => {
     const $navItemBio = $('#nav-bio');
     const $navItemResume = $('#nav-resume');
     const $navItemProjects = $('#nav-projects');
-    
+    // individual mobile nav items
+    const $mobileNavItemHome = $('#m-nav-home');
+    const $mobileNavItemBio = $('#m-nav-bio');
+    const $mobileNavItemResume = $('#m-nav-resume');
+    const $mobileNavItemProjects = $('#m-nav-projects');
 
     const showMainContent = (contentToShow, displayClass) => {
         for (let i = 0; i < $contentItems.length; i++) {
@@ -57,6 +61,28 @@ $(() => {
     $('#nav-projects').on('click', () => {
         navItemActive($navItemProjects, navActiveClass);
         showMainContent($projectContent, showContentClass);
+    })
+
+    // for mobile menu
+    $('#m-nav-home').on('click', () => {
+        navItemActive($mobileNavItemHome, navActiveClass);
+        showMainContent($homeContent, showContentClass);
+        $('#mobile-menu').removeClass('mm-show')
+    })
+    $('#m-nav-bio').on('click', () => {
+        navItemActive($mobileNavItemBio, navActiveClass);
+        showMainContent($bioContent, showContentClass);
+        $('#mobile-menu').removeClass('mm-show')
+    })
+    $('#m-nav-resume').on('click', () => {
+        navItemActive($mobileNavItemResume, navActiveClass);
+        showMainContent($resumeContent, showContentClass);
+        $('#mobile-menu').removeClass('mm-show')
+    })
+    $('#m-nav-projects').on('click', () => {
+        navItemActive($mobileNavItemProjects, navActiveClass);
+        showMainContent($projectContent, showContentClass);
+        $('#mobile-menu').removeClass('mm-show')
     })
 
     // project carousel logic
@@ -127,13 +153,10 @@ $(() => {
     $('#skills').click(openSkills);
 
     $('#three-dots').on('click', () => {
-        // $('nav ul').toggle()
-        console.log('clicking dots')
         $('#mobile-menu').addClass('mm-show')
     })
     
     $('.menu-close').on('click', () => {
-        console.log('close working')
         $('#mobile-menu').removeClass('mm-show')
     })
 })

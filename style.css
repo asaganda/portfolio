@@ -51,50 +51,50 @@ body {
     line-height: 1.2;
 }
 
-nav {
-    /* width: 90%;
-    margin: 0 auto;
-    margin-bottom: 1em; */
-}
 #mobile-menu .nav-item {
-    background: #AAF652;
     text-align: center;
-    padding: 1.2em 1em;
-    border-radius: 1.1em;
+    margin: 2.5em 0em;
+    padding: 0.7em 0em;
     cursor: pointer;
     list-style: none;
-    box-shadow: 0px 0px 4px 1px lightgrey;
     font-family: 'Asap', sans-serif;
     transition: all 0.6s;
+    color: #ccd6f6;
 }
 nav .nav-active {
-    background: #FF9100;
+    border-bottom-color: #ccd6f6;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
 }
-#nav-list ul {
+
+#nav-list {
     display: none;
     padding-left: 0px;
-    height: 260px;
-    /* justify-content: space-between; */
 }
 #mobile-menu {
     display: none;
     position: absolute;
     height: 100%;
     width: 100%;
-    background: #f4d1d1;
+    background: #203453;
     top: 0;
 }
 #mobile-menu ul {
     padding-left: 0px;
+    width: 5.5em;
 }
 #mobile-menu.mm-show {
     display: flex;
     flex-direction: column;
+    align-items: center;
     position: absolute;
     height: 100%;
     width: 100%;
-    background: #f4d1d1;
+    background: #203453;
     top: 0;
+}
+.menu-close {
+    color: #ccd6f6;
 }
 #mobile-menu .mobile-close {
     align-self: end;
@@ -216,25 +216,24 @@ h3 {
 @media (min-width: 768px) {
     #header {
         flex-direction: row;
+        padding: 0em 1.5em;
     }
     #pic-title {
         margin-left: 2.5em;
         justify-content: flex-start;
         margin-bottom: 0;
     }
+    #mobile-menu.mm-show {
+        display: none;
+    }
     #nav-list {
         display: flex;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-between;
         margin-bottom: 0px;
         align-items: center;
-        margin-right: 2.5em;
-    }
-    #nav-list ul {
-        flex-direction: row;
-        height: 56px;
-        align-content: center;
-        width: 100%;
-        justify-content: space-around;
+        list-style: none;
+        width: 25em;
     }
     .nav-item {
         min-width: 3em;
