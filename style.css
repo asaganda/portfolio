@@ -3,9 +3,13 @@
 }
 
 body {
-    background: #D3C2ff;
+    background: #0a1930;
 }
 
+#brand {
+    font-size: 2em;
+    color: #ccd6f6;
+}
 /* default display for #dynamic-content */
 .content-item {
     display: none;
@@ -125,10 +129,15 @@ h3 {
 #links a {
     color: black;
 }
+#links .fa-brands, 
+#links .fa-envelope {
+    color: #ccd6f6;
+}
 
 #dynamic-content {
     display: flex;
     flex-direction: column;
+    color: #ccd6f6;
 }
 #home {
     width: 90%;
@@ -237,6 +246,8 @@ h3 {
     }
     .nav-item {
         min-width: 3em;
+        font-family: 'Asap', sans-serif;
+        color: #ccd6f6;
     }
     #three-dots {
         display: none;
