@@ -20,7 +20,11 @@ body {
 #header {
     margin: 1em 0px;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em 1em;
+    height: 2em;
 }
 
 #pic-title {
@@ -48,11 +52,11 @@ body {
 }
 
 nav {
-    width: 90%;
+    /* width: 90%;
     margin: 0 auto;
-    margin-bottom: 1em;
+    margin-bottom: 1em; */
 }
-nav .nav-item {
+#mobile-menu .nav-item {
     background: #AAF652;
     text-align: center;
     padding: 1.2em 1em;
@@ -67,11 +71,34 @@ nav .nav-active {
     background: #FF9100;
 }
 #nav-list ul {
+    display: none;
     padding-left: 0px;
+    height: 260px;
+    /* justify-content: space-between; */
+}
+#mobile-menu {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #f4d1d1;
+    top: 0;
+}
+#mobile-menu ul {
+    padding-left: 0px;
+}
+#mobile-menu.mm-show {
     display: flex;
     flex-direction: column;
-    height: 260px;
-    justify-content: space-between;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #f4d1d1;
+    top: 0;
+}
+#mobile-menu .mobile-close {
+    align-self: end;
+    padding: 1.2em 1em;
 }
 
 .d-block {
@@ -211,6 +238,9 @@ h3 {
     }
     .nav-item {
         min-width: 3em;
+    }
+    #three-dots {
+        display: none;
     }
     #main-content {
         flex-direction: row;

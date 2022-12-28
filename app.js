@@ -108,7 +108,7 @@ $(() => {
     // Allows user to close modal by clicking outside modal area background
     $('body').on('click', (e) => {
         if ($(e.target).hasClass('show-modal')) {
-            $(event.target).removeClass('show-modal');
+            $(e.target).removeClass('show-modal');
         }
     })
 
@@ -125,4 +125,15 @@ $(() => {
 
     // skills toggle
     $('#skills').click(openSkills);
+
+    $('#three-dots').on('click', () => {
+        // $('nav ul').toggle()
+        console.log('clicking dots')
+        $('#mobile-menu').addClass('mm-show')
+    })
+    
+    $('.menu-close').on('click', () => {
+        console.log('close working')
+        $('#mobile-menu').removeClass('mm-show')
+    })
 })
