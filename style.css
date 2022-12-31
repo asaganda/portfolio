@@ -55,6 +55,19 @@ body {
     line-height: 1.2;
 }
 
+#mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #203453;
+    top: 0;
+    left: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
 #mobile-menu .nav-item {
     text-align: center;
     margin: 2.5em 0em;
@@ -75,14 +88,7 @@ nav .nav-active {
     display: none;
     padding-left: 0px;
 }
-#mobile-menu {
-    display: none;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: #203453;
-    top: 0;
-}
+
 #mobile-menu ul {
     padding-left: 0px;
     width: 5.5em;
