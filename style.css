@@ -102,6 +102,7 @@ nav .nav-active {
     width: 100%;
     background: #203453;
     top: 0;
+    left: 0;
 }
 .menu-open {
     color: #ccd6f6;
