@@ -477,20 +477,18 @@ footer {
 
 /* tablet landscape */
 @media (min-width: 1024px) {
-    #pic-title {
-        justify-content: flex-start;
-        margin-left: 2.5em;
-        width: 33%;
+    #home {
+        height: 85vh;
+        display: flex;
     }
-    #pic-title h1 {
-        min-width: 9em;
+    .profile {
+        width: 75%;
+        height: 45vh;
     }
-    #pic-title img {
-        max-width: 100px;
-        border-radius: 50%;
-        max-height: 100px;
-        object-fit: cover;
-        margin-right: 1em;
+    .name-title-info {
+        width: 80%;
+        align-self: end;
+        padding-left: 1.4em
     }
     .tech-skills-open {
         width: 40vw;
@@ -541,12 +539,11 @@ footer {
         }
     }
   
-    #pic-title img {
-        width: 120px;
-        border-radius: 50%;
-        height: 110px;
-        object-fit: cover;
-        margin-right: 1em;
+    .profile {
+        height: 50vh;
+    }
+    #home {
+        height: 88vh;
     }
     .nav-item:hover {
         background: #FF9100;
