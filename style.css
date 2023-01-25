@@ -261,9 +261,21 @@ footer {
 
 /* tablet portrait */
 @media (min-width: 768px) {
+    header {
+        right: 0;
+        width: 6em;
+        height: 100%;
+    }
     #header {
-        flex-direction: row;
+        flex-direction: column;
         padding: 0em 1.5em;
+        border-bottom: none;
+        height: 100%;
+        border-left: 2px solid #ccd7f6;
+    }
+    #brand {
+        font-size: 1.7em;
+        margin-top: 0.5em;
     }
     #pic-title {
         margin-left: 2.5em;
@@ -275,17 +287,21 @@ footer {
     }
     #nav-list {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: space-around;
         margin-bottom: 0px;
         align-items: center;
         list-style: none;
-        width: 25em;
+        height: 15em;
     }
     .nav-item {
-        min-width: 3em;
         font-family: 'Asap', sans-serif;
         color: #ccd6f6;
+        font-size: 1.1em;
+        text-align: end;
+    }
+    nav .nav-active {
+        border-bottom: none;
     }
     #three-dots {
         display: none;
@@ -296,10 +312,15 @@ footer {
     }
     #dynamic-content {
         flex-direction: row;
-        flex-basis: 80%;
+        flex-basis: 100%;
         position: relative;
+        justify-content: center;
+    }
+    .profile {
+        width: 80%;
     }
     #home {
+        width: auto;
         align-self: flex-start;
     }
     #bio {
@@ -318,9 +339,8 @@ footer {
         position: absolute;
         border-top: none;
         padding-top: 0;
-        border-left: 1px solid black;
-        padding-left: 1em;
         min-height: 150px;
+        margin: 0em 7em;
     }
     
     /* carousel styles */
@@ -436,16 +456,19 @@ footer {
         border: none;
     }
 
+    footer {
+        left: 0;
+        width: 6em;
+        height: 100%;
+    }
     #links {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         height: 200px;
-        width: 80px;
+        width: 5.7em;
         align-self: flex-start;
-        border-right-style: solid;
-        border-right-width: 2px;
-        border-right-color: #ccd7f6;
+        border-right: 2px solid #ccd7f6;
         border-top: none;
         padding-bottom: 1.5em;
         margin-bottom: 0;
@@ -468,9 +491,6 @@ footer {
         max-height: 100px;
         object-fit: cover;
         margin-right: 1em;
-    }
-    nav .nav-item {
-        min-width: 5em;
     }
     .tech-skills-open {
         width: 40vw;
