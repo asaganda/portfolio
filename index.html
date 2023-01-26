@@ -37,22 +37,6 @@
     <script src="https://kit.fontawesome.com/b6a2d8b0e4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- <header>
-        <section id="header">
-            <div id="pic-title">
-                <img src="MainProfPic.jpg" alt="profile pic">
-                <h1>Andrew Saganda <span class="d-block">Full Stack Developer</span></h1>
-            </div>
-            <nav id="nav-list">
-                <ul>
-                    <li id="nav-home" class="nav-item nav-active" tabindex="0">Home</li>
-                    <li id="nav-bio" class="nav-item" tabindex="0">Bio</li>
-                    <li id="nav-resume" class="nav-item" tabindex="0">Resume</li>
-                    <li id="nav-projects" class="nav-item" tabindex="0">Projects</li>
-                </ul>
-            </nav>
-        </section>
-    </header> -->
     <header>
         <nav>
             <div id="header">
@@ -87,7 +71,7 @@
                 <section id="home" class="content-item show-content">
                     <div class="content-wrapper">
                         <div class="profile">
-                            <img src="Andrew_profile.jpg" alt="profile image">
+                            <img src="images/Andrew_profile.jpg" alt="profile image">
                         </div>
                         <div class="name-title-info">
                             <h1><span class="name">Hello, my name is Andrew Saganda</span> <span class="full-stack">Full Stack Software Developer</span></h1>
@@ -166,77 +150,85 @@
                     </div>
                 </section>
                 <section id="projects" class="content-item">
-                    <h2>Projects</h2>
-                    <!-- will be adding placeholder projects in here -->
-                    <div id="project-container">
-                        <div id="project-list-carousel">
-                            <!-- previous button -->
-                            <div class="carousel-button previous">
-                                <span>&#9664;</span>
-                            </div>
-                            <div class="carousel-projects">
-                                <div class="project-item show-project">
-                                    <img src="https://via.placeholder.com/150x100" alt="placeholder image">
-                                    <h3>Project Name 1</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a libero ipsum. Morbi consectetur diam tempor massa tempus lobortis. Etiam vel nisl id nisi cursus egestas eget tempus orci. Cras vehicula felis justo, ac pellentesque erat malesuada sit amet. Phasellus tincidunt viverra nisi, in vehicula urna egestas nec. Nam aliquet augue sit amet erat malesuada, at iaculis nisl tincidunt. Nam scelerisque nunc enim, vel consequat risus convallis id.</p>
-                                    <div class="project-cta-container">
-                                        <button id="reveal-1" class="project-cta">See more</button>
+                    <div class="content-wrapper">
+                        <h2>Projects</h2>
+                        <!-- will be adding placeholder projects in here -->
+                        <div id="project-container">
+                            <div id="project-list-carousel">
+                                <!-- previous button -->
+                                <div class="carousel-button previous">
+                                    <span>&#9664;</span>
+                                </div>
+                                <div class="carousel-projects">
+                                    <div class="project-item show-project">
+                                        <img src="images/savetherims_project.png" alt="save the rims project">
+                                        <h3><a href="https://savetherims-frontend.herokuapp.com/">Save The Rims</a></h3>
+                                        <p>Description: Web app enabling users to submit geographic location of potholes encountered while driving via their current location saved to a list and markers on a map.</p>
+                                        <p>Tech Stack: Full Stack CRUD App built with Mongo, Express, React, Node, Google Maps API, Tailwind and React-router</p>
+                                        <div class="links">
+                                            <a href="https://savetherims-frontend.herokuapp.com/" target="_blank"><button>Demo</button></a>
+                                            <a href="https://github.com/asaganda/savetherims_frontend" target="_blank"><button>Github frontend</button></a>
+                                            <a href="https://github.com/asaganda/savetherims_backend" target="_blank"><button>Github backend</button></a>
+                                        </div>
+                                        <div class="project-cta-container">
+                                            <button id="reveal-1" class="project-cta">See more</button>
+                                        </div>
+                                        <!-- modal -->
+                                        <div id="project-1" class="modal">
+                                            <div id="modal-textbox">
+                                                <img src="https://via.placeholder.com/150x100" alt="placeholder image">
+                                                <h3>Project Name 1</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a libero ipsum. Morbi consectetur diam tempor massa tempus lobortis. Etiam vel nisl id nisi cursus egestas eget tempus orci. Cras vehicula felis justo, ac pellentesque erat malesuada sit amet. Phasellus tincidunt viverra nisi, in vehicula urna egestas nec. Nam aliquet augue sit amet erat malesuada, at iaculis nisl tincidunt. Nam scelerisque nunc enim, vel consequat risus convallis id.</p>
+                                                <div id="modal-footer">
+                                                    <button id="close-project-1" class="close-modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <!-- modal -->
-                                    <div id="project-1" class="modal">
-                                        <div id="modal-textbox">
-                                            <img src="https://via.placeholder.com/150x100" alt="placeholder image">
-                                            <h3>Project Name 1</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a libero ipsum. Morbi consectetur diam tempor massa tempus lobortis. Etiam vel nisl id nisi cursus egestas eget tempus orci. Cras vehicula felis justo, ac pellentesque erat malesuada sit amet. Phasellus tincidunt viverra nisi, in vehicula urna egestas nec. Nam aliquet augue sit amet erat malesuada, at iaculis nisl tincidunt. Nam scelerisque nunc enim, vel consequat risus convallis id.</p>
-                                            <div id="modal-footer">
-                                                <button id="close-project-1" class="close-modal">Close</button>
+                                    
+                                    <div class="project-item">
+                                        <img src="https://via.placeholder.com/150x100" alt="placeholder image">
+                                        <h3>Project Name 2</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a libero ipsum. Morbi consectetur diam tempor massa tempus lobortis. Etiam vel nisl id nisi cursus egestas eget tempus orci. Cras vehicula felis justo, ac pellentesque erat malesuada sit amet. Phasellus tincidunt viverra nisi, in vehicula urna egestas nec. Nam aliquet augue sit amet erat malesuada, at iaculis nisl tincidunt. Nam scelerisque nunc enim, vel consequat risus convallis id.</p>
+                                        <div class="project-cta-container">
+                                            <button id="reveal-2" class="project-cta">See more</button>
+                                        </div>
+                                        <!-- modal -->
+                                        <div id="project-2" class="modal">
+                                            <div id="modal-textbox">
+                                                <img src="https://via.placeholder.com/150x100" alt="placeholder image">
+                                                <h3>Project Name 2</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a libero ipsum. Morbi consectetur diam tempor massa tempus lobortis. Etiam vel nisl id nisi cursus egestas eget tempus orci. Cras vehicula felis justo, ac pellentesque erat malesuada sit amet. Phasellus tincidunt viverra nisi, in vehicula urna egestas nec. Nam aliquet augue sit amet erat malesuada, at iaculis nisl tincidunt. Nam scelerisque nunc enim, vel consequat risus convallis id.</p>
+                                                <div id="modal-footer">
+                                                    <button id="close-project-2" class="close-modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-item">
+                                        <img src="https://via.placeholder.com/150x100" alt="placeholder image">
+                                        <h3>Project Name 3</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a libero ipsum. Morbi consectetur diam tempor massa tempus lobortis. Etiam vel nisl id nisi cursus egestas eget tempus orci. Cras vehicula felis justo, ac pellentesque erat malesuada sit amet. Phasellus tincidunt viverra nisi, in vehicula urna egestas nec. Nam aliquet augue sit amet erat malesuada, at iaculis nisl tincidunt. Nam scelerisque nunc enim, vel consequat risus convallis id.</p>
+                                        <div class="project-cta-container">
+                                            <button id="reveal-3" class="project-cta">See more</button>
+                                        </div>
+                                        <!-- modal -->
+                                        <div id="project-3" class="modal">
+                                            <div id="modal-textbox">
+                                                <img src="https://via.placeholder.com/150x100" alt="placeholder image">
+                                                <h3>Project Name 3</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a libero ipsum. Morbi consectetur diam tempor massa tempus lobortis. Etiam vel nisl id nisi cursus egestas eget tempus orci. Cras vehicula felis justo, ac pellentesque erat malesuada sit amet. Phasellus tincidunt viverra nisi, in vehicula urna egestas nec. Nam aliquet augue sit amet erat malesuada, at iaculis nisl tincidunt. Nam scelerisque nunc enim, vel consequat risus convallis id.</p>
+                                                <div id="modal-footer">
+                                                    <button id="close-project-3" class="close-modal">Close</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                
-                                <div class="project-item">
-                                    <img src="https://via.placeholder.com/150x100" alt="placeholder image">
-                                    <h3>Project Name 2</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a libero ipsum. Morbi consectetur diam tempor massa tempus lobortis. Etiam vel nisl id nisi cursus egestas eget tempus orci. Cras vehicula felis justo, ac pellentesque erat malesuada sit amet. Phasellus tincidunt viverra nisi, in vehicula urna egestas nec. Nam aliquet augue sit amet erat malesuada, at iaculis nisl tincidunt. Nam scelerisque nunc enim, vel consequat risus convallis id.</p>
-                                    <div class="project-cta-container">
-                                        <button id="reveal-2" class="project-cta">See more</button>
-                                    </div>
-                                    <!-- modal -->
-                                    <div id="project-2" class="modal">
-                                        <div id="modal-textbox">
-                                            <img src="https://via.placeholder.com/150x100" alt="placeholder image">
-                                            <h3>Project Name 2</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a libero ipsum. Morbi consectetur diam tempor massa tempus lobortis. Etiam vel nisl id nisi cursus egestas eget tempus orci. Cras vehicula felis justo, ac pellentesque erat malesuada sit amet. Phasellus tincidunt viverra nisi, in vehicula urna egestas nec. Nam aliquet augue sit amet erat malesuada, at iaculis nisl tincidunt. Nam scelerisque nunc enim, vel consequat risus convallis id.</p>
-                                            <div id="modal-footer">
-                                                <button id="close-project-2" class="close-modal">Close</button>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <!-- next button -->
+                                <div class="carousel-button next">
+                                    <span>&#9654;</span>
                                 </div>
-                                <div class="project-item">
-                                    <img src="https://via.placeholder.com/150x100" alt="placeholder image">
-                                    <h3>Project Name 3</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a libero ipsum. Morbi consectetur diam tempor massa tempus lobortis. Etiam vel nisl id nisi cursus egestas eget tempus orci. Cras vehicula felis justo, ac pellentesque erat malesuada sit amet. Phasellus tincidunt viverra nisi, in vehicula urna egestas nec. Nam aliquet augue sit amet erat malesuada, at iaculis nisl tincidunt. Nam scelerisque nunc enim, vel consequat risus convallis id.</p>
-                                    <div class="project-cta-container">
-                                        <button id="reveal-3" class="project-cta">See more</button>
-                                    </div>
-                                    <!-- modal -->
-                                    <div id="project-3" class="modal">
-                                        <div id="modal-textbox">
-                                            <img src="https://via.placeholder.com/150x100" alt="placeholder image">
-                                            <h3>Project Name 3</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a libero ipsum. Morbi consectetur diam tempor massa tempus lobortis. Etiam vel nisl id nisi cursus egestas eget tempus orci. Cras vehicula felis justo, ac pellentesque erat malesuada sit amet. Phasellus tincidunt viverra nisi, in vehicula urna egestas nec. Nam aliquet augue sit amet erat malesuada, at iaculis nisl tincidunt. Nam scelerisque nunc enim, vel consequat risus convallis id.</p>
-                                            <div id="modal-footer">
-                                                <button id="close-project-3" class="close-modal">Close</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- next button -->
-                            <div class="carousel-button next">
-                                <span>&#9654;</span>
                             </div>
                         </div>
                     </div>
