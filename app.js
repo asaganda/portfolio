@@ -8,7 +8,7 @@ $(() => {
     // individual content variables
     const $homeContent = $('#home');
     const $bioContent = $('#bio');
-    const $resumeContent = $('#resume');
+    const $skillsContent = $('#skills');
     const $projectContent = $('#projects');
     
     // active class related
@@ -55,7 +55,7 @@ $(() => {
 
     $('#nav-resume').on('click', () => {
         navItemActive($navItemResume, navActiveClass);
-        showMainContent($resumeContent, showContentClass);
+        showMainContent($skillsContent, showContentClass);
     })
 
     $('#nav-projects').on('click', () => {
@@ -76,7 +76,7 @@ $(() => {
     })
     $('#m-nav-resume').on('click', () => {
         navItemActive($mobileNavItemResume, navActiveClass);
-        showMainContent($resumeContent, showContentClass);
+        showMainContent($skillsContent, showContentClass);
         $('#mobile-menu').removeClass('mm-show')
     })
     $('#m-nav-projects').on('click', () => {

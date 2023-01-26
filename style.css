@@ -18,7 +18,7 @@ header {
 }
 main {
     padding-bottom: 7em;
-    padding-top: 4em;
+    padding-top: 5em;
 }
 #brand {
     font-size: 2em;
@@ -203,50 +203,61 @@ footer {
     font-size: 1.3em;
     padding: 0.5em 0;
 }
-#resume {
+#skills {
     width: 90%;
     align-self: center;
 }
-.tech-skills {
-    display: none;
+#skills .content-wrapper {
+    background: #ccd7f6;
+    padding: 2em;
+    border-radius: var(--def-border-radius);
+    color: #0a1930;
 }
-.tech-skills-open {
+#skills h2 {
+    margin-bottom: 0.5em;
+}
+#skills h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.7em;
+}
+.skills-frontend,
+.skills-backend,
+.skills-database,
+.skills-tools {
+    padding: 0.5em 0;
+}
+#skills ul {
+    padding-left: 0;
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
 }
-.skill-item {
-    text-align: center;
+#skills ul li {
+    text-transform: uppercase;
+    background: #0a1930;
+    color: #ccd7f6;
+    padding: 0.7em 0.7em;
+    margin: 0.3em;
+    border-radius: 5px;
+    font-family: 'Asap', sans-serif;
 }
-.skill-item img {
-    max-width: 60px;
-}
-#job-container {
-    margin-top: 0.5em;
-    display: none;
-}
-.job-title {
-    font-size: 1.2em;
-}
-#job-container ul {
-    list-style-type: circle;
+.resume-btn {
+    display: flex;
+    justify-content: center;
 }
 #resume-file {
-    background: #AAF652;
+    background: #ccd7f6;
     text-align: center;
-    padding: 1.2em 1em;
-    border-radius: 1.1em;
+    padding: 0.8em 0em;
+    border-radius: var(--def-border-radius);
     cursor: pointer;
     list-style: none;
     font-family: 'Asap', sans-serif;
-    min-width: 7em;
+    width: 17em;
     font-size: 1em;
     border: none;
-    margin-top: 0.5em;
+    margin-top: 1.5em;
     text-transform: capitalize;
-}
-#resume-file a {
-    text-decoration: none;
 }
 
 #projects {
@@ -344,8 +355,10 @@ footer {
         align-self: flex-start;
         padding-bottom: 3em;
     }
-    #resume {
+    #skills {
+        width: auto;
         align-self: flex-start;
+        padding-bottom: 3em;
     }
     .tech-skills-open {
         width: 50vw;
