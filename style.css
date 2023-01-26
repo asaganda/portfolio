@@ -342,6 +342,7 @@ footer {
     #bio {
         width: auto;
         align-self: flex-start;
+        padding-bottom: 3em;
     }
     #resume {
         align-self: flex-start;
@@ -561,6 +562,9 @@ footer {
     }
     #home {
         height: 88vh;
+    }
+    #bio .content-wrapper {
+        padding: 3.5em;
     }
     .nav-item:hover {
         /* background: #FF9100;
