@@ -477,7 +477,7 @@ footer {
 
 /* tablet landscape */
 @media (min-width: 1024px) {
-    #home {
+    #home .content-wrapper {
         height: 85vh;
         display: flex;
     }
@@ -546,9 +546,10 @@ footer {
         height: 88vh;
     }
     .nav-item:hover {
-        background: #FF9100;
+        /* background: #FF9100;
         -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
+        cursor: pointer;
     }
     .carousel-button:hover {
         background: #FF9100;
