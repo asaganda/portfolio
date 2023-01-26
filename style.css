@@ -340,6 +340,7 @@ footer {
         align-self: flex-start;
     }
     #bio {
+        width: auto;
         align-self: flex-start;
     }
     #resume {
