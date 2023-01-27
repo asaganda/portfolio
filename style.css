@@ -105,7 +105,13 @@ nav .nav-active {
     border-bottom-style: solid;
     border-bottom-width: 3px;
 }
-
+#mobile-menu #m-nav-resume a {
+    color: #ccd6f6;
+    text-decoration: none;
+    border: 2px solid #ccd6f6;
+    border-radius: 5px;
+    padding: 1em 1em;
+}
 #nav-list {
     display: none;
     padding-left: 0px;
@@ -380,6 +386,10 @@ footer {
     }
     nav .nav-active {
         border-bottom: none;
+    }
+    #nav-resume a {
+        color: #ccd6f6;
+        text-decoration: none;
     }
     #three-dots {
         display: none;

@@ -17,12 +17,12 @@ $(() => {
     // individual nav items
     const $navItemHome = $('#nav-home');
     const $navItemBio = $('#nav-bio');
-    const $navItemResume = $('#nav-resume');
+    const $navItemSkills = $('#nav-skills');
     const $navItemProjects = $('#nav-projects');
     // individual mobile nav items
     const $mobileNavItemHome = $('#m-nav-home');
     const $mobileNavItemBio = $('#m-nav-bio');
-    const $mobileNavItemResume = $('#m-nav-resume');
+    const $mobileNavItemSkills = $('#m-nav-skills');
     const $mobileNavItemProjects = $('#m-nav-projects');
 
     const showMainContent = (contentToShow, displayClass) => {
@@ -53,8 +53,8 @@ $(() => {
         showMainContent($bioContent, showContentClass);
     })
 
-    $('#nav-resume').on('click', () => {
-        navItemActive($navItemResume, navActiveClass);
+    $('#nav-skills').on('click', () => {
+        navItemActive($navItemSkills, navActiveClass);
         showMainContent($skillsContent, showContentClass);
     })
 
@@ -74,8 +74,8 @@ $(() => {
         showMainContent($bioContent, showContentClass);
         $('#mobile-menu').removeClass('mm-show')
     })
-    $('#m-nav-resume').on('click', () => {
-        navItemActive($mobileNavItemResume, navActiveClass);
+    $('#m-nav-skills').on('click', () => {
+        navItemActive($mobileNavItemSkills, navActiveClass);
         showMainContent($skillsContent, showContentClass);
         $('#mobile-menu').removeClass('mm-show')
     })
