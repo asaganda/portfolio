@@ -85,73 +85,7 @@ $(() => {
         $('#mobile-menu').removeClass('mm-show')
     })
 
-    // project carousel logic
-    let currentProjectIndex = 0;
-    let numOfProjectItems = $('.carousel-projects').children().length -1;
-
-    $('.next').on('click', () => {
-        $('.carousel-projects').children().eq(currentProjectIndex).removeClass('show-project');
-        if (currentProjectIndex < numOfProjectItems) {
-            currentProjectIndex++
-        } else {
-            currentProjectIndex = 0
-        }
-        $('.carousel-projects').children().eq(currentProjectIndex).addClass('show-project');
-    })
-
-    $('.previous').on('click', () => {
-        $('.carousel-projects').children().eq(currentProjectIndex).removeClass('show-project');
-        if (currentProjectIndex > 0) {
-            currentProjectIndex--
-        } else {
-            currentProjectIndex = numOfProjectItems
-        }
-        $('.carousel-projects').children().eq(currentProjectIndex).addClass('show-project');
-    })
-
-    // modal functionality
-    $('#reveal-1').on('click', () => {
-        $('#project-1').addClass('show-modal');
-    });
-    $('#close-project-1').on('click', () => {
-        $('#project-1').removeClass('show-modal');
-    });
-
-    $('#reveal-2').on('click', () => {
-        $('#project-2').addClass('show-modal');
-    })
-    $('#close-project-2').on('click', () => {
-        $('#project-2').removeClass('show-modal');
-    })
-
-    $('#reveal-3').on('click', () => {
-        $('#project-3').addClass('show-modal');
-    })
-    $('#close-project-3').on('click', () => {
-        $('#project-3').removeClass('show-modal');
-    })
-
-    // Allows user to close modal by clicking outside modal area background
-    $('body').on('click', (e) => {
-        if ($(e.target).hasClass('show-modal')) {
-            $(e.target).removeClass('show-modal');
-        }
-    })
-
-
-    const openJob = () => {
-        $('#job-container').toggle("slow");
-    }
-
-    const openSkills = () => {
-        $('#technologies-container').toggleClass("tech-skills-open");
-    }
-    // recent job toggle
-    $('#recent-job').click(openJob);
-
-    // skills toggle
-    $('#skills').click(openSkills);
-
+    // mobile menu open/close functionality
     $('#three-dots').on('click', () => {
         $('#mobile-menu').addClass('mm-show')
     })
