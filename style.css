@@ -271,9 +271,8 @@ footer {
     color: #0a1930;
 }
 #projects h2 {
-    margin-bottom: 15px;
+    margin-bottom: 1em;
 }
-
 .project-item {
     margin-bottom: 1em;
 }
@@ -294,6 +293,23 @@ footer {
 .project-item p {
     padding: 0.3em 0;
 }
+.project-item .tech {
+    display: flex;
+    flex-wrap: wrap;
+}
+.project-item .tech span {
+    text-transform: uppercase;
+    background: #0a1930;
+    color: #ccd7f6;
+    padding: 0.4em 0.4em;
+    margin: 0.2em;
+    border-radius: 5px;
+    font-family: 'Asap', sans-serif;
+}
+.project-item .tech span.label {
+    background: #ccd8f6;
+    color: #0a1930;
+}
 .project-item .links {
     margin: 0.5em 0;
 }
@@ -305,6 +321,8 @@ footer {
     margin-right: 0.3em;
     border-radius: 5px;
     font-family: 'Asap', sans-serif;
+    margin-bottom: 0.5em;
+    font-size: 1em;
 }
 .carousel-button {
     display: none;
