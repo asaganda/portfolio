@@ -352,7 +352,7 @@ footer {
     }
     #header {
         flex-direction: column;
-        padding: 0em 1.5em;
+        padding: 0em 0em;
         border-bottom: none;
         height: 100%;
         border-left: 2px solid #ccd7f6;
@@ -386,6 +386,16 @@ footer {
     }
     nav .nav-active {
         border-bottom: none;
+    }
+    nav .nav-active::after {
+        content: '';
+        height: 0.3em;
+        display: inline-block;
+        width: 0.3em;
+        background: white;
+        border-radius: 50%;
+        vertical-align: middle;
+        margin-left: 7px;
     }
     #nav-resume a {
         color: #ccd6f6;
