@@ -467,7 +467,9 @@ footer {
     .project-item p {
         display: none;
     }
-
+    .project-item {
+        margin-bottom: 3em;
+    }
     /* modal styles */
     .modal {
         display: none;
