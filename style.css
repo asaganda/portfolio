@@ -415,6 +415,7 @@ footer {
         width: 50vw;
     }
     #projects {
+        width: auto;
         align-self: flex-start;
     }
     .content-item {
@@ -429,6 +430,7 @@ footer {
     #project-container {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
     }
     #project-list-carousel {
         width: 80%;
@@ -575,9 +577,11 @@ footer {
     .tech-skills-open {
         width: 40vw;
     }
-    #project-list-carousel {
-        max-width: 600px;
-        align-self: center;
+    #projects #project-container {
+        justify-content: space-between;
+    }
+    #projects .project-item {
+        flex-basis: 48%;
     }
     #modal-textbox {
         width: 600px;
