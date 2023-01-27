@@ -37,22 +37,6 @@
     <script src="https://kit.fontawesome.com/b6a2d8b0e4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- <header>
-        <section id="header">
-            <div id="pic-title">
-                <img src="MainProfPic.jpg" alt="profile pic">
-                <h1>Andrew Saganda <span class="d-block">Full Stack Developer</span></h1>
-            </div>
-            <nav id="nav-list">
-                <ul>
-                    <li id="nav-home" class="nav-item nav-active" tabindex="0">Home</li>
-                    <li id="nav-bio" class="nav-item" tabindex="0">Bio</li>
-                    <li id="nav-resume" class="nav-item" tabindex="0">Resume</li>
-                    <li id="nav-projects" class="nav-item" tabindex="0">Projects</li>
-                </ul>
-            </nav>
-        </section>
-    </header> -->
     <header>
         <nav>
             <div id="header">
@@ -62,10 +46,11 @@
                     
                 </div>
                 <ul id="nav-list">
-                    <li id="nav-home" class="nav-item nav-active" tabindex="0">//Home</li>
-                    <li id="nav-bio" class="nav-item" tabindex="0">//Bio</li>
-                    <li id="nav-resume" class="nav-item" tabindex="0">//Resume</li>
-                    <li id="nav-projects" class="nav-item" tabindex="0">//Projects</li>
+                    <li id="nav-home" class="nav-item nav-active" tabindex="0">Home</li>
+                    <li id="nav-bio" class="nav-item" tabindex="0">Bio</li>
+                    <li id="nav-skills" class="nav-item" tabindex="0">Skills</li>
+                    <li id="nav-projects" class="nav-item" tabindex="0">Projects</li>
+                    <li id="nav-resume" class="nav-item" tabindex="0"><a href="https://docs.google.com/document/d/1m4wYq2jol8vN_OCKJlF2QMTkYSR3e3aljqfQV08UpuY/edit?usp=sharing" target="_blank">Resume</a></li>
                 </ul>
             </div>
             <div id="mobile-menu">
@@ -75,8 +60,9 @@
                 <ul>
                     <li id="m-nav-home" class="nav-item nav-active" tabindex="0">Home</li>
                     <li id="m-nav-bio" class="nav-item" tabindex="0">Bio</li>
-                    <li id="m-nav-resume" class="nav-item" tabindex="0">Resume</li>
+                    <li id="m-nav-skills" class="nav-item" tabindex="0">Skills</li>
                     <li id="m-nav-projects" class="nav-item" tabindex="0">Projects</li>
+                    <li id="m-nav-resume" class="nav-item" tabindex="0"><a href="https://docs.google.com/document/d/1m4wYq2jol8vN_OCKJlF2QMTkYSR3e3aljqfQV08UpuY/edit?usp=sharing" target="_blank">Resume</a></li>
                 </ul>
             </div>
         </nav>
@@ -85,129 +71,145 @@
         <div id="main-content">
             <div id="dynamic-content">
                 <section id="home" class="content-item show-content">
-                    <h2>Home</h2>
-                    <p>Welcome to my page where I showcase the technologies I have proficiency in as well as ones I've recently learned and  applied to building web applications. I get excited about the prospect of building something from scratch while learning new skills along the way.</p>
-                </section>
-                <section id="bio" class="content-item">
-                    <h2>Bio</h2>
-                    <p>I believe everyone in this world can build something for themselves as long as they have access to resources and the vision of their goal.</p>
-                    <p>Having been in the web development field for a number of years, I decided to invest in myself and advance by learning modern technologies in software engineering. The vision I have for myself is to build a career by strengthening my software skills</p>
-                </section>
-                <section id="resume" class="content-item">
-                    <h2 id="skills">Technological Skills</h2>
-                    <!-- <ul id="skills-container">
-                        <li>html</li>
-                        <li>css</li>
-                        <li>javascript</li>
-                        <li>jQuery</li>
-                        <li>Bootstrap</li>
-                        <li>node</li>
-                        <li>git</li>
-                    </ul> -->
-                    <div id="technologies-container" class="tech-skills">
-                        <!-- turn the list above into images with title -->
-                        <div class="skill-item">
-                            <p>HTML5</p>
-                            <img src="https://cdn.iconscout.com/icon/free/png-256/html5-40-1175193.png" alt="html5">
+                    <div class="content-wrapper">
+                        <div class="profile">
+                            <img src="images/Andrew_profile.jpg" alt="profile image">
                         </div>
-                        <div class="skill-item">
-                            <p>CSS3</p>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/240px-CSS3_logo.svg.png" alt="css3">
-                        </div>
-                        <div class="skill-item">
-                            <p>JavaScript</p>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png" alt="javascript">
-                        </div>
-                        <div class="skill-item">
-                            <p>jQuery</p>
-                            <img src="https://cdn.iconscout.com/icon/free/png-256/jquery-3521520-2945023.png" alt="jquery">
+                        <div class="name-title-info">
+                            <h1><span class="name">Hello, my name is Andrew Saganda</span> <span class="full-stack">Full Stack Software Developer</span></h1>
+                            <p>My career in software engineering is fueled by my continuous desire to solve problems by building impactful, comprehensive solutions to drive organizational success. My keen eye for detail as well as front end development experience, influences my passion for bringing a vision to life through technology.
+                            </p>
                         </div>
                     </div>
-                    <h3 id="recent-job">Recent Job</h3>
-                        <div id="job-container">
-                            <h4 class="job-title">Front End Developer, FullBeauty Brands</h4>
-                            <ul>
-                                <li>Built brand content for e-commerce company within Salesforce Commerce Cloud platform while collaborating with internal e-commerce and creative teams meeting weekly launches</li>
-                                <li>Used HTML/CSS/Flexbox/jQuery/Photoshop technologies to develop brand content while adhering to brand style-guides and design system</li>
-                                <li>Incorporated WCAG ADA Level AA compliance into our build process to make our sites more accessible</li>
-                                <li>2021 Impact: 939,504 average monthly page visits that generated $2,664,490 average month spend</li>
-                            </ul>
+                </section>
+                <section id="bio" class="content-item">
+                    <div class="content-wrapper">
+                        <h2>Bio</h2>
+                        <p>Hi, my name is Andrew and I'm a software engineer with over 5 years of experience in front end web development. However, I wanted to learn more and build meaningful web applications using modern technologies that users could interact with and receive value. Prior to web development, i spent a few years working in the energy efficiency space executing analysis and managing energy data facilitated by Excel. To achieve this goal, I decided to invest in myself by joining a software engineering program offered by General Assembly.</p>
+                        <p>During the program, I learned how to build web applications using modern technologies and gained a deeper understanding of software engineering. You can check out multiple projects on the projects page.</p>
+                        <p>At the end of January 2023, I successfully completed the program, and now I am actively seeking a full-stack software engineer role where I can utilize the new skills and knowledge I have acquired. My goal is to build a career by strengthening my software skills.</p>
+                        <p>When i'm away from my desk, i enjoy spending time with family and friends, practicing yoga and strength training, playing tennis, traveling to new places and trying new recipes.</p>
+                    </div>
+                </section>
+                <section id="skills" class="content-item">
+                    <div class="content-wrapper">
+                        <h2>Skills</h2>
+                        <div class="skills-container">
+                            <div class="skills-frontend">
+                                <h3>Front End</h3>
+                                <ul>
+                                    <li>html</li>
+                                    <li>css</li>
+                                    <li>javascript</li>
+                                    <li>react</li>
+                                    <li>react-router</li>
+                                    <li>flexbox</li>
+                                    <li>bootstrap</li>
+                                    <li>jQuery</li>
+                                    <li>tailwind</li>
+                                    <li>sass</li>
+                                </ul>
+                            </div>
+                            <div class="skills-backend">
+                                <h3>Back End</h3>
+                                <ul>
+                                    <li>node</li>
+                                    <li>express</li>
+                                    <li>django</li>
+                                    <li>javascript</li>
+                                    <li>python</li>
+                                    <li>mongoose</li>
+                                </ul>
+                            </div>
+                            <div class="skills-database">
+                                <h3>Database</h3>
+                                <ul>
+                                    <li>sql</li>
+                                    <li>postgres</li>
+                                    <li>mongo</li>
+                                </ul>
+                            </div>
+                            <div class="skills-tools">
+                                <h3>Tools</h3>
+                                <ul>
+                                    <li>VSCode</li>
+                                    <li>bash</li>
+                                    <li>postman</li>
+                                    <li>terminal/cli</li>
+                                    <li>git</li>
+                                    <li>github</li>
+                                    <li>jira</li>
+                                    <li>confluence</li>
+                                    <li>photoshop</li>
+                                    <li>figma</li>
+                                </ul>
+                            </div>
                         </div>
-                    <button id="resume-file"><a href="AndrewSagandaDevResume2022.pdf" target="_blank">full resume</a></button>
+                    </div>
+                    <div class="resume-btn">
+                        <a href="https://docs.google.com/document/d/1m4wYq2jol8vN_OCKJlF2QMTkYSR3e3aljqfQV08UpuY/edit?usp=sharing" target="_blank"><button id="resume-file">Resume</button></a>
+                    </div>
                 </section>
                 <section id="projects" class="content-item">
-                    <h2>Projects</h2>
-                    <!-- will be adding placeholder projects in here -->
-                    <div id="project-container">
-                        <div id="project-list-carousel">
-                            <!-- previous button -->
-                            <div class="carousel-button previous">
-                                <span>&#9664;</span>
-                            </div>
-                            <div class="carousel-projects">
-                                <div class="project-item show-project">
-                                    <img src="https://via.placeholder.com/150x100" alt="placeholder image">
-                                    <h3>Project Name 1</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a libero ipsum. Morbi consectetur diam tempor massa tempus lobortis. Etiam vel nisl id nisi cursus egestas eget tempus orci. Cras vehicula felis justo, ac pellentesque erat malesuada sit amet. Phasellus tincidunt viverra nisi, in vehicula urna egestas nec. Nam aliquet augue sit amet erat malesuada, at iaculis nisl tincidunt. Nam scelerisque nunc enim, vel consequat risus convallis id.</p>
-                                    <div class="project-cta-container">
-                                        <button id="reveal-1" class="project-cta">See more</button>
-                                    </div>
-                                    <!-- modal -->
-                                    <div id="project-1" class="modal">
-                                        <div id="modal-textbox">
-                                            <img src="https://via.placeholder.com/150x100" alt="placeholder image">
-                                            <h3>Project Name 1</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a libero ipsum. Morbi consectetur diam tempor massa tempus lobortis. Etiam vel nisl id nisi cursus egestas eget tempus orci. Cras vehicula felis justo, ac pellentesque erat malesuada sit amet. Phasellus tincidunt viverra nisi, in vehicula urna egestas nec. Nam aliquet augue sit amet erat malesuada, at iaculis nisl tincidunt. Nam scelerisque nunc enim, vel consequat risus convallis id.</p>
-                                            <div id="modal-footer">
-                                                <button id="close-project-1" class="close-modal">Close</button>
-                                            </div>
+                    <div class="content-wrapper">
+                        <h2>Projects</h2>
+                        <!-- will be adding placeholder projects in here -->
+                        <div id="project-container">
+                            <!-- <div id="project-list-carousel"> -->
+                                <!-- previous button -->
+                                <!-- <div class="carousel-button previous">
+                                    <span>&#9664;</span>
+                                </div> -->
+                                <!-- <div class="carousel-projects"> -->
+                                    <div class="project-item show-project">
+                                        <h3><a href="https://savetherims-frontend.herokuapp.com/">Save The Rims</a></h3>
+                                        <img src="images/savetherims_project.png" alt="save the rims project">
+                                        <p>Description: Full Stack CRUD Web app enabling users to submit geographic location of potholes encountered while driving via their current location saved to a list and markers on a map.</p>
+                                        <p class="tech"><span class="label">Tech Stack:</span> <span>Mongo</span> <span>Express</span> <span>React</span> <span>Node</span> <span>mongoose</span> <span>Google Maps API</span> <span>Tailwind</span> <span>React-router</span></p>
+                                        <div class="links">
+                                            <a href="https://savetherims-frontend.herokuapp.com/" target="_blank"><button>Demo</button></a>
+                                            <a href="https://github.com/asaganda/savetherims_frontend" target="_blank"><button>Github (Front-end)</button></a>
+                                            <a href="https://github.com/asaganda/savetherims_backend" target="_blank"><button>Github (Back-end)</button></a>
                                         </div>
                                     </div>
-                                </div>
-                                
-                                <div class="project-item">
-                                    <img src="https://via.placeholder.com/150x100" alt="placeholder image">
-                                    <h3>Project Name 2</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a libero ipsum. Morbi consectetur diam tempor massa tempus lobortis. Etiam vel nisl id nisi cursus egestas eget tempus orci. Cras vehicula felis justo, ac pellentesque erat malesuada sit amet. Phasellus tincidunt viverra nisi, in vehicula urna egestas nec. Nam aliquet augue sit amet erat malesuada, at iaculis nisl tincidunt. Nam scelerisque nunc enim, vel consequat risus convallis id.</p>
-                                    <div class="project-cta-container">
-                                        <button id="reveal-2" class="project-cta">See more</button>
-                                    </div>
-                                    <!-- modal -->
-                                    <div id="project-2" class="modal">
-                                        <div id="modal-textbox">
-                                            <img src="https://via.placeholder.com/150x100" alt="placeholder image">
-                                            <h3>Project Name 2</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a libero ipsum. Morbi consectetur diam tempor massa tempus lobortis. Etiam vel nisl id nisi cursus egestas eget tempus orci. Cras vehicula felis justo, ac pellentesque erat malesuada sit amet. Phasellus tincidunt viverra nisi, in vehicula urna egestas nec. Nam aliquet augue sit amet erat malesuada, at iaculis nisl tincidunt. Nam scelerisque nunc enim, vel consequat risus convallis id.</p>
-                                            <div id="modal-footer">
-                                                <button id="close-project-2" class="close-modal">Close</button>
-                                            </div>
+                                    <div class="project-item show-project">
+                                        <h3><a href="https://savetherims-frontend.herokuapp.com/">Restaurant Reviewer</a></h3>
+                                        <img src="images/restaurant_reviewer_project.png" alt="restaurant reviewer project">
+                                        <p>Description: Full Stack CRUD Web app that stores a collection of user submitted restaurants along with their reviews (Group project)</p>
+                                        <p class="tech"><span class="label">Tech Stack:</span> <span>django</span> <span>python</span> <span>React</span> <span>postgres</span> <span>bootstrap</span></p>
+                                        <div class="links">
+                                            <a href="https://restaurant-frontend.herokuapp.com/" target="_blank"><button>Demo</button></a>
+                                            <a href="https://github.com/asaganda/restaurant_fe" target="_blank"><button>Github (Front-end)</button></a>
+                                            <a href="https://github.com/tking36/restaurant_backend" target="_blank"><button>Github (Back-end)</button></a>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="project-item">
-                                    <img src="https://via.placeholder.com/150x100" alt="placeholder image">
-                                    <h3>Project Name 3</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a libero ipsum. Morbi consectetur diam tempor massa tempus lobortis. Etiam vel nisl id nisi cursus egestas eget tempus orci. Cras vehicula felis justo, ac pellentesque erat malesuada sit amet. Phasellus tincidunt viverra nisi, in vehicula urna egestas nec. Nam aliquet augue sit amet erat malesuada, at iaculis nisl tincidunt. Nam scelerisque nunc enim, vel consequat risus convallis id.</p>
-                                    <div class="project-cta-container">
-                                        <button id="reveal-3" class="project-cta">See more</button>
-                                    </div>
-                                    <!-- modal -->
-                                    <div id="project-3" class="modal">
-                                        <div id="modal-textbox">
-                                            <img src="https://via.placeholder.com/150x100" alt="placeholder image">
-                                            <h3>Project Name 3</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a libero ipsum. Morbi consectetur diam tempor massa tempus lobortis. Etiam vel nisl id nisi cursus egestas eget tempus orci. Cras vehicula felis justo, ac pellentesque erat malesuada sit amet. Phasellus tincidunt viverra nisi, in vehicula urna egestas nec. Nam aliquet augue sit amet erat malesuada, at iaculis nisl tincidunt. Nam scelerisque nunc enim, vel consequat risus convallis id.</p>
-                                            <div id="modal-footer">
-                                                <button id="close-project-3" class="close-modal">Close</button>
-                                            </div>
+                                    <div class="project-item show-project">
+                                        <h3><a href="https://social-media-app-front-end-ba.herokuapp.com/">BA Social</a></h3>
+                                        <img src="images/socialmedia_project.png" alt="social media project">
+                                        <p>Description: Full Stack CRUD Web app for sharing user submitted image posts with followers. Ability to update/delete posts and users. Features additional custom API endpoints, user account creation and authentication (Group project)</p>
+                                        <p class="tech"><span class="label">Tech Stack:</span> <span>mongo</span> <span>express</span> <span>react</span> <span>node</span> <span>mongoose</span> <span>bootstrap</span></p>
+                                        <div class="links">
+                                            <a href="https://social-media-app-front-end-ba.herokuapp.com/" target="_blank"><button>Demo</button></a>
+                                            <a href="https://github.com/bklingelfus/social-app-fe" target="_blank"><button>Github (Front-end)</button></a>
+                                            <a href="https://github.com/asaganda/SEIR-project3-BE" target="_blank"><button>Github (Back-end)</button></a>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <!-- next button -->
-                            <div class="carousel-button next">
-                                <span>&#9654;</span>
-                            </div>
+                                    <div class="project-item show-project">
+                                        <h3><a href="https://my-garage-collect1on.herokuapp.com/garage">myGarage</a></h3>
+                                        <img src="images/mygarage_project.png" alt="my garage project">
+                                        <p>Description: Full Stack CRUD Server side rendered web app for showing a collection of cars allowing the user to add/update/delete a car to the collection. Leveraged sessionStorage for showing garage door aesthetic on first page load only</p>
+                                        <p class="tech"><span class="label">Tech Stack:</span> <span>node</span> <span>express</span> <span>mongo</span> <span>mongoose</span> <span>ejs</span> <span>bootstrap</span> <span>jquery</span></p>
+                                        <div class="links">
+                                            <a href="https://my-garage-collect1on.herokuapp.com/garage" target="_blank"><button>Demo</button></a>
+                                            <a href="https://github.com/asaganda/myGarage" target="_blank"><button>Github</button></a>
+                                        </div>
+                                    </div>
+                                <!-- </div> -->
+                                <!-- next button -->
+                                <!-- <div class="carousel-button next">
+                                    <span>&#9654;</span>
+                                </div> -->
+                            <!-- </div> -->
                         </div>
                     </div>
                 </section>
