@@ -427,6 +427,7 @@ footer {
     #projects {
         width: auto;
         align-self: flex-start;
+        padding-bottom: 3em;
     }
     .content-item {
         position: absolute;
