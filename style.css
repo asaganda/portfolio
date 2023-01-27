@@ -464,9 +464,6 @@ footer {
     .carousel-projects .show-project {
         display: block;
     }
-    .project-item p {
-        display: none;
-    }
     .project-item {
         margin-bottom: 3em;
     }
