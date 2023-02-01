@@ -485,4 +485,7 @@ footer {
     .nav-item:hover {
         cursor: pointer;
     }
+    .project-item .links a button {
+        cursor: pointer;
+    }
 }
