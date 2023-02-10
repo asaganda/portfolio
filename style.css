@@ -479,7 +479,7 @@ footer {
         align-items: center;
     }
     .profile {
-        width: 75%;
+        width: 55%;
         height: 45vh;
         align-items: center;
         margin-bottom: 0;
@@ -507,6 +507,7 @@ footer {
 @media (min-width: 1200px) {
     .profile {
         height: 50vh;
+        width: 25em;
     }
     #home {
         height: 88vh;
