@@ -1,4 +1,4 @@
 # portfolio
-Portfolio Site showcasing info about me, my skills as pertains to software engineering and recent projects
+Portfolio Site showcasing info about me, my software engineering skills and recent projects
 
 Link to site: https://www.asaganda.com/
